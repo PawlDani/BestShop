@@ -1,4 +1,4 @@
-/*FONTS*/
+/*FONT FAMILY*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -25,6 +25,41 @@ body {
   --pricingSectionButtonShadow: #ff091129;
   --contactLines: #95989a;
   --consentText: #707070;
+
+  /* FONTS */
+
+  /* Nav */
+
+  --fontNavLogo: normal normal 300 32px/37px Raleway;
+  --fontNavLinks: normal normal bold 11px/15px Open Sans;
+  --fontNavLinksHover: normal normal bold 11px/15px Open Sans;
+
+  /* Hero */
+
+  --fontHeroTitle: normal normal bold 49px/57px Raleway;
+  --fontHeroText: normal normal normal 16px/22px Open Sans;
+  --fontHeroButton: normal normal bold 16px/22px Open Sans;
+
+  /* Buttons */
+
+  .btn {
+    font: var(--fontHeroButton);
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 16px 65px;
+    display: inline-block;
+  }
+
+  .btn--primary {
+    background-color: var(--buttonAndLogo);
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px var(--buttonShadow);
+    text-decoration: none;
+  }
+
+  .btn--large {
+    padding: 22px 157px;
+  }
 }
 
 /* BOX SIZING */
@@ -32,3 +67,94 @@ body {
   box-sizing: border-box;
 }
 
+/* MAIN CONTAINER */
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--mainBackground);
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__logo {
+  font: var(--fontNavLogo);
+  color: var(--buttonAndLogo);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar__link {
+  font: var(--fontNavLinks);
+  color: var(--fontNavLinks);
+  color: var(--secondaryText);
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+  letter-spacing: 0.1875rem;
+  text-decoration: none;
+  padding: 28px 18px 22px;
+}
+
+.navbar__link:hover {
+  color: var(--fontNavLinksHover);
+  border-color: var(--buttonAndLogo);
+}
+
+.navbar__link:active {
+  color: var(--fontNavLinksHover);
+  border-color: var(--buttonAndLogo);
+  border-bottom: 4px solid var(--buttonAndLogo);
+}
+
+.navbar__item {
+  padding: 0 26px;
+}
+
+.navbar__item:last-child {
+  padding-right: 0;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__container {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.hero__title {
+  font: var(--fontHeroTitle);
+  color: var(--mainText);
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  font: var(--fontHeroText);
+  color: var(--mainText);
+  margin-bottom: 38px;
+}
+
+.hero__img {
+  width: 100%;
+  height: auto;
+}
