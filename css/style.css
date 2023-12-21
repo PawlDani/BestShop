@@ -4,3 +4,31 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Raleway", sans-serif;
 }
+
+/* ROOT */
+
+:root {
+  --mainBackground: #ffffff;
+  --mainBorder: #00000029;
+  --mainText: #000000;
+  --buttonAndLogo: #08a6e4;
+  --secondaryText: #a5a5a5;
+  --buttonShadow: #07ace629;
+  --redElements: #fb3b64;
+  --greenElements: #55dfb4;
+  --outsideBorder: #f7f7f7;
+  --insideBorder: #e8e9ed;
+  --phoneBlue: #07ace6;
+  --pricingSection: #13253b;
+  --pricingSectionShadow: #f9043629;
+  --secondaryRed: #eb476e;
+  --pricingSectionButtonShadow: #ff091129;
+  --contactLines: #95989a;
+  --consentText: #707070;
+}
+
+/* BOX SIZING */
+* {
+  box-sizing: border-box;
+}
+
