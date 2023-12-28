@@ -11,6 +11,6 @@ const exercisePath = "";
 export default defineConfig({
   root: exercisePath,
   server: {
-    port: 3000,
+    port: 3001,
   },
 });

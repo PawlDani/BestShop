@@ -471,13 +471,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 18x;
+  border-radius: 38px;
   border: 1px solid var(--accent-color);
 }
 
 .pricing__box:hover {
   box-shadow: 3px 6px 9px var(--accent-color);
   transition: 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 .pricing__details {
@@ -493,16 +494,14 @@ header {
 }
 
 .pricing__cost {
-  font-size: 2.875rem;
-  font-family: var(--font-open-sans);
-  font-weight: 300;
   margin-top: 25px;
   color: var(--accent-color);
+  font: normal normal 300 46px/2px Open Sans;
 }
 
 .pricing__offer {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 35px;
   font-size: 0.75rem;
   font-family: var(--font-raleway);
   font-weight: 700;
@@ -537,7 +536,7 @@ header {
   background-color: var(--accent-color);
 }
 
-.pricing__box .btn:hover {
+.pricing__box:hover .btn {
   background-color: var(--accent-color);
   box-shadow: 3px 6px 9px var(--accent-color);
   transition: 0.3s ease-in-out;
